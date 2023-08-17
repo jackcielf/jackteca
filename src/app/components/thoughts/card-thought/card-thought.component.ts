@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-thought',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-thought.component.css']
 })
 export class CardThoughtComponent implements OnInit {
-  pensamento = {
+  @Input() pensamento = {
     conteudo: 'Aprendendo Angular',
     autoria: 'Dev',
     modelo: 'modelo3',
@@ -15,6 +15,14 @@ export class CardThoughtComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  widthThought(): string {
+    if (this.pensamento.conteudo.length >= 256) {
+      return 'pensamento-g';
+    }
+    return 'pensamento-p';
+
   }
 
 }
