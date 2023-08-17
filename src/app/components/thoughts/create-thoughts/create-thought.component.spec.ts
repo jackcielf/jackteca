@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CreateThoughtsComponent } from './create-thoughts.component';
+import { CreateThoughtsComponent } from './create-thought.component';
 
 describe('CreateThoughtsComponent', () => {
   let component: CreateThoughtsComponent;
