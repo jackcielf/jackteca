@@ -1,5 +1,5 @@
 {
-  "pensamentos": [
+  "thought": [
     {
       "id": 1,
       "conteudo": "Aprendendo Angular",
@@ -17,24 +17,6 @@
       "conteudo": "Hello World",
       "autoria": "frameworl Angular",
       "modelo": "modelo3"
-    },
-    {
-      "conteudo": "",
-      "autoria": "",
-      "modelo": "",
-      "id": 4
-    },
-    {
-      "conteudo": "",
-      "autoria": "",
-      "modelo": "",
-      "id": 5
-    },
-    {
-      "conteudo": "",
-      "autoria": "",
-      "modelo": "",
-      "id": 6
     }
   ]
 }

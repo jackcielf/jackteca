@@ -7,11 +7,10 @@ import Thought from 'src/app/Thought';
   styleUrls: ['./card-thought.component.css']
 })
 export class CardThoughtComponent implements OnInit {
-  @Input() pensamento: Thought = {
-    id: 1,
-    conteudo: 'Aprendendo Angular',
-    autoria: 'Dev',
-    modelo: 'modelo3',
+  @Input() thought: Thought = {
+    conteudo: '',
+    autoria: '',
+    modelo: ''
   };
 
   constructor() { }
@@ -20,11 +19,10 @@ export class CardThoughtComponent implements OnInit {
   }
 
   widthThought(): string {
-    if (this.pensamento.conteudo.length >= 256) {
+    if (this.thought.conteudo.length >= 256) {
       return 'pensamento-g';
     }
     return 'pensamento-p';
-
   }
 
 }
