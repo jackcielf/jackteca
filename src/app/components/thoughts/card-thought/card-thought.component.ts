@@ -4,25 +4,23 @@ import Thought from 'src/app/Thought';
 @Component({
   selector: 'app-card-thought',
   templateUrl: './card-thought.component.html',
-  styleUrls: ['./card-thought.component.css']
+  styleUrls: ['./card-thought.component.css'],
 })
 export class CardThoughtComponent implements OnInit {
   @Input() thought: Thought = {
     conteudo: '',
     autoria: '',
-    modelo: ''
+    modelo: '',
   };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   widthThought(): string {
     if (this.thought.conteudo.length >= 256) {
-      return 'pensamento-g';
+      return 'thought-g';
     }
-    return 'pensamento-p';
+    return 'thought-p';
   }
-
 }

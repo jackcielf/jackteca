@@ -19,7 +19,7 @@ const routes: Routes = [
     component: ListThoughtsComponent,
   },
   {
-    path: 'delete-thought/:id',
+    path: 'thoughts/delete-thought/:id',
     component: DeleteThoughtComponent,
   }
 ];

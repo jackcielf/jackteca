@@ -1,5 +1,5 @@
 <div
-  class="pensamento {{ thought.modelo }} ff-roboto-mono"
+  class="thought {{ thought.modelo }} ff-roboto-mono"
   [ngClass]="widthThought"
 >
 <img src="/assets/imagens/{{ thought.modelo }}.png" alt="Aspas coloridas" />
@@ -9,7 +9,7 @@
     <button class="botao-editar">
         <img src="/assets/imagens/icone-editar.png" alt="Ícone de editar">
     </button>
-    <button class="botao-excluir" routerLink="thought/delete-thought/{{thought.id}}">
+    <button class="botao-excluir" routerLink="/thoughts/delete-thought/{{thought.id}}">
         <img src="/assets/imagens/icone-excluir.png" alt="Ícone de excluir">
     </button>
 </div>

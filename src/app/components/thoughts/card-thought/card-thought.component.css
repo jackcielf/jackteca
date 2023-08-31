@@ -17,18 +17,18 @@
   margin-top: 10px;
 }
 
-.pensamento {
+.thought {
   background-color: #f8f9fe;
   padding: 1rem;
   box-sizing: border-box;
 }
 
-.pensamento .conteudo {
+.thought .conteudo {
   margin: 1rem auto;
   word-wrap: break-word;
 }
 
-.pensamento .autoria {
+.thought .autoria {
   word-wrap: break-word;
 }
 
@@ -44,21 +44,21 @@
   box-shadow: 8px 8px 0px #84eec1;
 }
 
-.pensamento-g {
+.thought-g {
   width: 556px;
 }
 
-.pensamento-p {
+.thought-p {
   width: 262px;
 }
 
 @media screen and (max-width: 768px) {
-  .pensamento-g {
+  .thought-g {
     width: 100%;
   }
 }
 @media screen and (max-width: 426px) {
-  .pensamento-p {
+  .thought-p {
     width: 100%;
   }
 }

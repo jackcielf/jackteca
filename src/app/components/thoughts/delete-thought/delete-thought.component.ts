@@ -30,7 +30,7 @@ export class DeleteThoughtComponent implements OnInit {
     });
   }
 
-  // Função para deletar o pensamento e mudar de tela
+  // Função para deletar o thought e mudar de tela
   deleteThought() {
     if (this.thought.id) {
       this.service.delete(this.thought.id).subscribe(() => {
@@ -41,6 +41,6 @@ export class DeleteThoughtComponent implements OnInit {
 
   // Cancela a confirmação de exclusão mudando de rota
   cancel() {
-    this.router.navigate(['/list-thought'])
+    this.router.navigate(['/list-thought']);
   }
 }
