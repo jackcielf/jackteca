@@ -33,6 +33,7 @@ export class DeleteThoughtComponent implements OnInit {
   // Função para deletar o thought e mudar de tela
   deleteThought() {
     if (this.thought.id) {
+      console.log(this.thought.id)
       this.service.delete(this.thought.id).subscribe(() => {
         this.router.navigate(['/list-thought']);
       });
